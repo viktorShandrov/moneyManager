@@ -16,12 +16,14 @@ export const pageEndpoints = {
     login: '/login',
     register: '/register',
     logout: '/logout',
-    home: '/home'
+    home: '/home',
 }
 
 const root = document.body
 
 page(decorateContext);
+
+
 
 page('/index.html', ()=>{
     if(getUserData()){
@@ -30,6 +32,7 @@ page('/index.html', ()=>{
         page.redirect('/login');
     }
 });
+page("/node_modules/*",pageEndpoints.home)
 page(pageEndpoints.create, createPage);
 page(pageEndpoints.logout, logoutAction)
 page(pageEndpoints.login, loginPage);

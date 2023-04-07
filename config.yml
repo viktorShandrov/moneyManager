@@ -1,0 +1,22 @@
+# Site settings
+title: My Jekyll Site
+description: This is my awesome Jekyll site.
+
+# Build settings
+theme: my-theme
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# GitHub Pages settings
+remote_theme: viktorShandrov/moneyManager.io
+
+# config.yml
+defaults:
+  # Your other defaults here
+  - scope:
+      path: ""
+      type: "404"
+    values:
+      layout: "default"
+      permalink: "/404.html"

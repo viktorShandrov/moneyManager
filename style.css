@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "bebas";
+  src: url("./BebasNeue-Regular.ttf");
+}
+
+
+header{
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6cm;
+  border-radius: 5px;
+}
+
+.navBtn{
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navBtn:hover {
+  background-color: #ddd;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: sans-serif;
+  padding-top: 1ch;
+  margin-top: 1ch;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-form button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+#loginPageLabel,#registerPageLabel{
+  padding: 1ch;
+  background-color:rgb(33, 225, 212);
+  border-radius: 5px;
+font-weight: bold;
+margin-top: 1ch;
+margin-bottom: 1ch;
+
+}
+/* .sort-btn {
+  background-color: #f7f7f7;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sort-btn i {
+  margin-left: 8px;
+} */
+
+.highlighted{
+  background-color: rgb(10, 205, 42) !important;
+}
+
+.record-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.record-row button {
+  margin-left: 10px;
+}
+
+table {
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-collapse: separate;
+  border-spacing:0;
+  border-radius: 15px ;
+}
+th, td {
+  /* border: 1px solid black; */
+  padding: 8px;
+  text-align: left;
+  font-family: bebas;
+  font-weight: 300;
+}
+
+#detailsHeader{
+  border-top-left-radius: 15px;
+  
+}
+#operationHeader{
+  
+  border-right: 1px solid black;
+  border-top-right-radius: 15px;
+  
+}
+
+
+
+
+
+th{
+  background-color: rgb(27, 241, 155);
+  border-top: 1px solid black;
+}
+
+tr:nth-child(odd){
+background-color: #e4c4db93;
+}
+tr:nth-child(even){
+background-color: #e1cbcb;
+}
+
+th > * {
+  flex-direction: column;
+  align-items: center;
+  display: flex; 
+  vertical-align: middle !important
+}
+th button{
+  flex-direction: row;
+}
+th button > :last-child {
+  margin-left: 5px;
+}
+
+
+
+
+th button{
+  border-radius: 15px;
+  background-color: #ecd4bb;
+  box-shadow: none;
+  border: 1px solid #ecd4bb;
+}
+
+.rounded-headers-left-bottom{
+  border-bottom-left-radius: 15px;
+}
+.rounded-headers-right-bottom{
+  border-bottom-right-radius: 15px;
+}
+
+
+
+#table tbody tr:first-child td:last-child{
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-top-right-radius: 15px;
+}
+
+tr td button{
+  border-radius: 15px;
+  background-color: #f4bd82;
+  box-shadow: none;
+  border: 1px solid #f3c9c9;
+}
+#table tbody tr:last-child td:first-child{
+  border-bottom-left-radius: 15px;
+}
+#table tbody tr td:last-child{
+  border-right: 1px solid black;
+}
+#table tbody tr:first-child td{
+  border-top: 1px solid black;
+}
+
+
+
+#table tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 15px;
+}
+
